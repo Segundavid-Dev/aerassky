@@ -1,7 +1,9 @@
+import AppRoute from "./router/AppRoute";
+
 function App() {
   return (
     <div>
-      <h1 className="text-teal-600">Hello world</h1>
+      <AppRoute />
     </div>
   );
 }
