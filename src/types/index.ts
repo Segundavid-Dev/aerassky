@@ -8,3 +8,9 @@ export type reasonsArrayType = {
   heading: string;
   text: string;
 }[];
+
+export type servicesArrayType = {
+  img: string;
+  heading: string;
+  text: string;
+}[];

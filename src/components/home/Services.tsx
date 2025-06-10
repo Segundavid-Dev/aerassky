@@ -1,3 +1,5 @@
+import { servicesArray } from "../../../public/data";
+
 export default function Services() {
   return (
     <div>
@@ -20,7 +22,20 @@ export default function Services() {
 function ServicesGrid() {
   return (
     <div>
-      <p>services grid</p>
+      <div className="grid grid-cols-2 gap-20 text-center">
+        {servicesArray.map((item, index) => (
+          <div
+            key={index}
+            className="bg-[url(/images/home/abstract-background.png)] bg-no-repeat bg-center"
+          >
+            <img src={item.img} alt="Image icon" className="w-[90px] mx-auto" />
+            <h3 className="text-[30px]">{item.heading}</h3>
+            <p className="w-[95%] mx-auto text-[var(--text-gray)]">
+              {item.text}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
