@@ -1,6 +1,7 @@
 import HomeNav from "../components/home/HomeHeader";
 import Hero from "../components/home/Hero";
 import ReasonsToChoose from "../components/home/Reasons";
+import Services from "../components/home/Services";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
       </div>
       <ReasonsToChoose />
+      <Services />
     </div>
   );
 }
