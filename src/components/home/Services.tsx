@@ -22,11 +22,11 @@ export default function Services() {
 function ServicesGrid() {
   return (
     <div>
-      <div className="grid grid-cols-2 gap-20 text-center">
+      <div className="grid grid-cols-2 gap-20 text-center pb-30">
         {servicesArray.map((item, index) => (
           <div
             key={index}
-            className="bg-[url(/images/home/abstract-background.png)] bg-no-repeat bg-center"
+            className="bg-[url(/images/home/abstract-background.png)] bg-no-repeat bg-center pt-5"
           >
             <img src={item.img} alt="Image icon" className="w-[90px] mx-auto" />
             <h3 className="text-[30px]">{item.heading}</h3>

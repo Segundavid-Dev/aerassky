@@ -1,4 +1,8 @@
-import type { reasonsArrayType, servicesArrayType } from "../src/types/index";
+import type {
+  reasonsArrayType,
+  servicesArrayType,
+  worksArrayType,
+} from "../src/types/index";
 
 export const reasonsArray: reasonsArrayType = [
   {
@@ -53,5 +57,36 @@ export const servicesArray: servicesArrayType = [
     img: "/images/home/Digitial-Marketing-icon.png",
     heading: "Digital Marketing",
     text: "Drive Your Business Forward In the vast digital landscape, standing out from the competition is crucial. Our digital marketing services help you rise above the noise and connect with your target audience effectively. From search engine optimization (SEO) to social media marketing and pay-per-click (PPC) campaigns, our data-driven strategies ensure that your message reaches the right people at the right time.",
+  },
+];
+
+export const worksArray: worksArrayType = [
+  {
+    img: "/images/home/ecommerce.png",
+    heading: "Innovative E-commerce Platform",
+    text: "Witness our groundbreaking e-commerce platform that seamlessly connects buyers and sellers worldwide. With an intuitive user interface and secure payment gateways, this project revolutionizes online shopping.",
+    subheading: "Category: Web Development.",
+    date: "January 2022",
+  },
+  {
+    img: "/images/home/mobile-app.png",
+    heading: "Mobile App for Enhanced Fitness",
+    text: "Witness our groundbreaking e-commerce platform that seamlessly connects buyers and sellers worldwide. With an intuitive user interface and secure payment gateways, this project revolutionizes online shopping.",
+    subheading: "Category: Mobile App Development.",
+    date: "January 2022",
+  },
+  {
+    img: "/images/home/modern.png",
+    heading: "Modern Corporate Website",
+    text: "Check out our sleek and modern corporate website that showcases the client's brand and services. Its responsive design ensures a consistent experience across devices. ",
+    subheading: "Category: Web Design.",
+    date: "April 2022",
+  },
+  {
+    img: "/images/home/digital.png",
+    heading: "Digital Marketing Success Story",
+    text: "Discover how our data-driven digital marketing strategies boosted a client's online presence, resulting in a significant increase in website traffic and leads.",
+    subheading: "Category: Digital Marketing.",
+    date: "May 2022",
   },
 ];

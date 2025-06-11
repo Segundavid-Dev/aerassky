@@ -14,3 +14,11 @@ export type servicesArrayType = {
   heading: string;
   text: string;
 }[];
+
+export type worksArrayType = {
+  img: string;
+  heading: string;
+  text: string;
+  subheading: string;
+  date: string;
+}[];
