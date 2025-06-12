@@ -9,7 +9,7 @@ export default function Works() {
         <h2 className="text-[48px] font-semibold pb-5">
           <span className="text-[var(--text-gray)]">Our</span> Works
         </h2>
-        <p className="text-[var(--text-gray)] w-[70%] mx-auto">
+        <p className="text-[var(--text-gray)] w-[70%] mx-auto pb-5">
           Witness the brilliance of our previous projects. Our portfolio
           showcases the successful collaborations we've had with diverse clients
           across various industries. Let our work speak for itself.

@@ -3,12 +3,12 @@ import { TestimonialsArray } from "../../../public/data";
 
 export default function Testimonials() {
   return (
-    <div>
-      <div className="text-center pb-30">
+    <div className="pb-30">
+      <div className="text-center">
         <h2 className="text-[48px] font-semibold w-[60%] mx-auto">
           <span className="text-[var(--text-gray)]">Our</span> Testimonials
         </h2>
-        <p className="text-[var(--text-gray)] w-[70%] mx-auto">
+        <p className="text-[var(--text-gray)] w-[60%] mx-auto pb-10">
           Don't just take our word for it; hear what our satisfied clients have
           to say about their experience with DigitX. We take pride in building
           lasting relationships and delivering exceptional results.

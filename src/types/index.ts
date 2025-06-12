@@ -30,3 +30,8 @@ export type TestimonialsArrayType = {
   userTitle: string;
   userImage: string;
 }[];
+
+export type FAQArrayType = {
+  title: string;
+  text: string;
+}[];

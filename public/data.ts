@@ -3,6 +3,7 @@ import type {
   servicesArrayType,
   worksArrayType,
   TestimonialsArrayType,
+  FAQArrayType,
 } from "../src/types/index";
 
 export const reasonsArray: reasonsArrayType = [
@@ -124,5 +125,44 @@ export const TestimonialsArray: TestimonialsArrayType = [
     userName: "Sarah Thompson",
     userTitle: "CEO of BlueBloom Fashion",
     userImage: "/images/home/Micheal-Johnson.png",
+  },
+];
+
+export const FAQArray: FAQArrayType = [
+  {
+    title: "How long does it take to complete a web development project?",
+    text: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+  },
+  {
+    title: "Can you handle large-scale mobile app development projects?",
+    text: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+  },
+  {
+    title:
+      "Do you offer maintenance services for websites and apps developed by other companies?",
+    text: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+  },
+  {
+    title:
+      "How do you ensure the security of user data in your web applications?",
+    text: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+  },
+  {
+    title:
+      "Can you create a responsive website design that looks great on all devices?",
+    text: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+  },
+  {
+    title:
+      "What digital marketing strategies do you employ to drive website traffic?",
+    text: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+  },
+  {
+    title: "Can you integrate third-party APIs into our mobile app?",
+    text: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+  },
+  {
+    title: "How do you ensure cross-platform compatibility for mobile apps?",
+    text: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
   },
 ];
