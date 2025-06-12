@@ -15,10 +15,6 @@ export default function Testimonials() {
         </p>
       </div>
       <TestimonialSlider />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus in
-      sint velit odio earum perferendis culpa libero, repudiandae animi, aliquam
-      facilis illo, eum accusantium perspiciatis itaque. Nobis doloremque
-      tempore est?
     </div>
   );
 }
@@ -29,7 +25,7 @@ function TestimonialSlider() {
       <div className="flex">
         {TestimonialsArray.map((item, index) => (
           <div key={index} className="max-w-[400px] mr-10 ">
-            <div className="border border-gray-100/20 p-5 rounded-[20px] mb-3">
+            <div className="border border-gray-100/20 p-5 rounded-[20px] mb-3 bg-[#1a1a1a]">
               <div className="mb-3">
                 <img
                   src={item.icon}
