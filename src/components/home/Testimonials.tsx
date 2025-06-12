@@ -1,3 +1,5 @@
+import Marquee from "react-fast-marquee";
+
 export default function Testimonials() {
   return (
     <div>
@@ -11,6 +13,18 @@ export default function Testimonials() {
           lasting relationships and delivering exceptional results.
         </p>
       </div>
+      <TestimonialSlider/>
+    </div>
+  );
+}
+
+function TestimonialSlider() {
+  return (
+    <div>
+      <Marquee>
+        I can be a React component, multiple React components, or just some
+        text.
+      </Marquee>
     </div>
   );
 }
