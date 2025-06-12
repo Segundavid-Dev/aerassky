@@ -1,9 +1,11 @@
 import { worksArray } from "../../../public/data";
+import Button from "../shared/Button";
 
+import { MoveRight } from "lucide-react";
 export default function Works() {
   return (
     <div>
-      <div className="text-center">
+      <div className="text-center pb-30">
         <h2 className="text-[48px] font-semibold pb-5">
           <span className="text-[var(--text-gray)]">Our</span> Works
         </h2>
@@ -14,6 +16,12 @@ export default function Works() {
         </p>
       </div>
       <WorksGrid />
+      <Button className="text-[14px] flex items-center gap-[15px] border border-[#e6e6e6] px-[15px] py-[7px] rounded-full cursor-pointer hover:bg-white hover:text-black hover:translate-x-4 duration-300 mt-20 mx-auto">
+        View all projects
+        <span>
+          <MoveRight size={14} />
+        </span>
+      </Button>
     </div>
   );
 }

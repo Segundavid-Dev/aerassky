@@ -3,6 +3,7 @@ import Hero from "../components/home/Hero";
 import ReasonsToChoose from "../components/home/Reasons";
 import Services from "../components/home/Services";
 import Works from "../components/home/Works";
+import Testimonials from "../components/home/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ReasonsToChoose />
       <Services />
       <Works />
+      <Testimonials />
     </div>
   );
 }
