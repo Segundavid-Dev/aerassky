@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { FAQArray } from "../../../public/data";
 
 import { Plus } from "lucide-react";
@@ -25,11 +23,6 @@ export default function FAQ() {
 }
 
 function FAQGrid() {
-  const [openFaq, setOpenFaq] = useState(false);
-
-  function handleOpenFaq() {
-    return setOpenFaq(!openFaq);
-  }
   return (
     <div className="grid grid-cols-2 gap-10">
       {FAQArray.map((item, index) => (
@@ -41,17 +34,12 @@ function FAQGrid() {
         >
           <div className="flex justify-between">
             <h2 className="text-[18px] pb-5 w-[80%]">{item.title}</h2>
-            <span
-              className="bg-[#1a1a1a] rounded-full h-[52px] w-[52px] flex items-center justify-center hover:bg-white hover:text-[#1a1a1a] duration-300"
-              onClick={handleOpenFaq}
-            >
+            <span className="bg-[#1a1a1a] rounded-full h-[52px] w-[52px] flex items-center justify-center hover:bg-white hover:text-[#1a1a1a] duration-300">
               <Plus strokeWidth={3} />
             </span>
           </div>
           <p
-            className={`text-[var(--text-gray)] ${
-              openFaq ? "h-fit" : "max-h-0 overflow-hidden"
-            }`}
+            className={`text-[var(--text-gray)] ${"max-h-0 overflow-hidden"} transition-all duration-200 ease-out`}
           >
             {item.text}
           </p>
