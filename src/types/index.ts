@@ -22,3 +22,11 @@ export type worksArrayType = {
   subheading: string;
   date: string;
 }[];
+
+export type TestimonialsArrayType = {
+  icon: string;
+  comment: string;
+  userName: string;
+  userTitle: string;
+  userImage: string;
+}[];

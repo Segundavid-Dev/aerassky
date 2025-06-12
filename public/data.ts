@@ -2,6 +2,7 @@ import type {
   reasonsArrayType,
   servicesArrayType,
   worksArrayType,
+  TestimonialsArrayType,
 } from "../src/types/index";
 
 export const reasonsArray: reasonsArrayType = [
@@ -88,5 +89,40 @@ export const worksArray: worksArrayType = [
     text: "Discover how our data-driven digital marketing strategies boosted a client's online presence, resulting in a significant increase in website traffic and leads.",
     subheading: "Category: Digital Marketing.",
     date: "May 2022",
+  },
+];
+
+export const TestimonialsArray: TestimonialsArrayType = [
+  {
+    icon: "/images/home/twitter-logo.png",
+    comment:
+      "Working with DigitX was a pleasure. Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive.",
+    userName: "Mark Roberts",
+    userTitle: "Founder of GreenEarth Eco Store",
+    userImage: "/images/home/Mark-Roberts.png",
+  },
+  {
+    icon: "/images/home/twitter-logo.png",
+    comment:
+      "The mobile app DigitX developed for us exceeded our expectations. Its user-friendly interface and seamless functionality have earned us rave reviews from our users.",
+    userName: "Lisa Williams",
+    userTitle: "Head of Product at HealthTech Innovations",
+    userImage: "/images/home/Lisa.png",
+  },
+  {
+    icon: "/images/home/twitter-logo.png",
+    comment:
+      "DigitX transformed our outdated website into a modern, responsive platform. Their attention to detail and ability to understand our vision made the entire process smooth and hassle-free.",
+    userName: "Micheal Johnson",
+    userTitle: "Marketing Manager at GlobalTech Solutions.",
+    userImage: "/images/home/Micheal-Johnson.png",
+  },
+  {
+    icon: "/images/home/twitter-logo.png",
+    comment:
+      "DigitX turned our business around! Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!",
+    userName: "Sarah Thompson",
+    userTitle: "CEO of BlueBloom Fashion",
+    userImage: "/images/home/Sarah-Thompson.png",
   },
 ];
