@@ -4,8 +4,8 @@ import Button from "../shared/Button";
 import { MoveRight } from "lucide-react";
 export default function Works() {
   return (
-    <div>
-      <div className="text-center pb-30">
+    <div className="pb-30">
+      <div className="text-center">
         <h2 className="text-[48px] font-semibold pb-5">
           <span className="text-[var(--text-gray)]">Our</span> Works
         </h2>
