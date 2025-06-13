@@ -47,9 +47,11 @@ function FAQGrid() {
             </span>
           </div>
           <p
-            className={`text-[var(--text-gray)] ${
-              openFaqId !== index ? "max-h-0 overflow-hidden" : ""
-            } transition-all duration-200 ease-out`}
+            className={`text-[var(--text-gray)] overflow-hidden ${
+              openFaqId === index
+                ? "max-h-40 overflow-hidden"
+                : "max-h-0 opacity-0"
+            } transition-all duration-500 ease-out`}
           >
             {item.text}
           </p>
