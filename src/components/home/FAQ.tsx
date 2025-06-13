@@ -1,4 +1,5 @@
 import { FAQArray } from "../../../public/data";
+import { useState } from "react";
 
 import { Plus } from "lucide-react";
 
@@ -23,14 +24,21 @@ export default function FAQ() {
 }
 
 function FAQGrid() {
+  const [openFaqId, setOpenFaqId] = useState<number | null>(null);
+
+  const openFaq = (id: number) => {
+    setOpenFaqId((prev) => (prev === id ? null : id));
+  };
+
   return (
-    <div className="grid grid-cols-2 gap-10">
+    <div className="w-[70%] mx-auto">
       {FAQArray.map((item, index) => (
         <div
           key={index}
+          onClick={() => openFaq(index)}
           className={`${
             index !== 7 ? "border-b border-gray-100/20" : ""
-          } cursor-pointer pb-3`}
+          } cursor-pointer pb-3 py-5`}
         >
           <div className="flex justify-between">
             <h2 className="text-[18px] pb-5 w-[80%]">{item.title}</h2>
@@ -39,7 +47,9 @@ function FAQGrid() {
             </span>
           </div>
           <p
-            className={`text-[var(--text-gray)] ${"max-h-0 overflow-hidden"} transition-all duration-200 ease-out`}
+            className={`text-[var(--text-gray)] ${
+              openFaqId !== index ? "max-h-0 overflow-hidden" : ""
+            } transition-all duration-200 ease-out`}
           >
             {item.text}
           </p>
