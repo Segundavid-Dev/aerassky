@@ -8,7 +8,7 @@ export default function Footer() {
     <footer>
       <div className="flex justify-end pb-5">
         <div className="flex gap-5">
-          <p>Follo us on Social Media</p>
+          <p>Follow us on Social Media</p>
           <span className="flex gap-2">
             <Linkedin className="cursor-pointer" />
             <Instagram className="cursor-pointer" />
@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="grid grid-cols-6 py-10 border-gray-100/20 border-t border-b">
+      <div className="grid grid-cols-6 py-10 border-gray-100/20 border-t border-b max-sm:grid-cols-2 max-sm:gap-10">
         <ul>
           <p className="pb-5">Home</p>
           <li className="pb-3">
@@ -138,10 +138,10 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div className="text-[var(--text-gray)] flex items-center justify-between py-5">
+      <div className="text-[var(--text-gray)] flex items-center justify-between py-5 max-sm:flex-col">
         <div>@{currentYear} Aerassky. All rights Reserved.</div>
         <div>Version 1.0</div>
-        <ul className="flex gap-5">
+        <ul className="flex gap-5 max-sm:flex-wrap max-sm:gap-2 max-sm:justify-center">
           <li>Privacy Policy</li>
           <li>Terms & Conditions</li>
           <li>Cookie Policy</li>
