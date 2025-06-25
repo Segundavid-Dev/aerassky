@@ -58,7 +58,7 @@ export default function HomeNav() {
         ))}
       </ul>
       <div className="hidden max-sm:block z-20" onClick={handleNavOpen}>
-        <Menu />
+        <Menu size={40} />
       </div>
     </nav>
   );
