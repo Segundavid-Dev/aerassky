@@ -49,7 +49,7 @@ export default function HomeNav() {
       <ul
         className={`flex gap-8 items-center justify-center max-sm:flex-col max-sm:fixed max-sm:left-0 ${
           navOpen ? "top-0" : "max-sm:top-[-100%]"
-        } max-sm:w-full max-sm:h-screen max-sm:bg-black/90 duration-300 transition-all`}
+        } max-sm:w-full max-sm:h-screen max-sm:bg-black/90 duration-300 transition-all max-sm:text-[16px]`}
       >
         {navLinks.map((item, index) => (
           <li key={index} className="cursor-pointer">
