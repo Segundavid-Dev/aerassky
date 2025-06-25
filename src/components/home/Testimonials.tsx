@@ -5,10 +5,10 @@ export default function Testimonials() {
   return (
     <div className="pb-30">
       <div className="text-center">
-        <h2 className="text-[48px] font-semibold w-[60%] mx-auto">
+        <h2 className="text-[48px] font-semibold w-[60%] mx-auto max-sm:w-full max-sm:text-[32px] max-sm:pb-5">
           <span className="text-[var(--text-gray)]">Our</span> Testimonials
         </h2>
-        <p className="text-[var(--text-gray)] w-[60%] mx-auto pb-10">
+        <p className="text-[var(--text-gray)] w-[60%] mx-auto pb-10 max-sm:w-full">
           Don't just take our word for it; hear what our satisfied clients have
           to say about their experience with DigitX. We take pride in building
           lasting relationships and delivering exceptional results.
@@ -24,7 +24,7 @@ function TestimonialSlider() {
     <Marquee>
       <div className="flex">
         {TestimonialsArray.map((item, index) => (
-          <div key={index} className="max-w-[400px] mr-10 ">
+          <div key={index} className="max-w-[400px] mr-10">
             <div className="border border-gray-100/20 p-5 rounded-[20px] mb-3 bg-[#1a1a1a]">
               <div className="mb-3">
                 <img

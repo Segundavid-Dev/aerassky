@@ -4,10 +4,10 @@ export default function Services() {
   return (
     <div>
       <div className="text-center">
-        <h2 className="text-[48px] font-semibold">
+        <h2 className="text-[48px] font-semibold max-sm:text-[32px]">
           <span className="text-[var(--text-gray)]">Our</span> Services
         </h2>
-        <p className="text-[var(--text-gray)] pb-10 w-[70%] mx-auto">
+        <p className="text-[var(--text-gray)] pb-10 w-[70%] mx-auto max-sm:w-full">
           Our comprehensive range of services includes web design, mobile app
           development, SEO, social media marketing, and more. Whether you're a
           startup or an established enterprise, our experts will craft solutions
@@ -22,7 +22,7 @@ export default function Services() {
 function ServicesGrid() {
   return (
     <div>
-      <div className="grid grid-cols-2 gap-20 text-center pb-30">
+      <div className="grid grid-cols-2 gap-20 text-center pb-30 max-sm:grid-cols-1">
         {servicesArray.map((item, index) => (
           <div
             key={index}

@@ -7,11 +7,11 @@ export default function FAQ() {
   return (
     <div className="pb-30">
       <div>
-        <h2 className="text-[48px] font-semibold w-[60%] mx-auto">
+        <h2 className="text-[48px] font-semibold w-[60%] mx-auto max-sm:text-[32px] max-sm:w-full text-center">
           <span className="text-[var(--text-gray)]">Frequently</span> Asked
           Questions
         </h2>
-        <p className="text-[var(--text-gray)] w-[70%] mx-auto pb-10 text-center">
+        <p className="text-[var(--text-gray)] w-[70%] mx-auto pb-10 text-center max-sm:w-full ">
           Got questions? We've got answers. Check out our frequently asked
           questions section to find valuable insights into our processes,
           pricing, and more. Transparency is at the core of our client
@@ -31,7 +31,7 @@ function FAQGrid() {
   };
 
   return (
-    <div className="w-[70%] mx-auto">
+    <div className="w-[70%] mx-auto max-sm:w-full">
       {FAQArray.map((item, index) => (
         <div
           key={index}

@@ -6,10 +6,10 @@ export default function Works() {
   return (
     <div className="pb-30">
       <div className="text-center">
-        <h2 className="text-[48px] font-semibold pb-5">
+        <h2 className="text-[48px] font-semibold pb-5 max-sm:text-[32px]">
           <span className="text-[var(--text-gray)]">Our</span> Works
         </h2>
-        <p className="text-[var(--text-gray)] w-[70%] mx-auto pb-5">
+        <p className="text-[var(--text-gray)] w-[70%] mx-auto pb-5 max-sm:w-full">
           Witness the brilliance of our previous projects. Our portfolio
           showcases the successful collaborations we've had with diverse clients
           across various industries. Let our work speak for itself.
@@ -28,7 +28,7 @@ export default function Works() {
 
 function WorksGrid() {
   return (
-    <div className="grid grid-cols-2 gap-30">
+    <div className="grid grid-cols-2 gap-30 max-sm:grid-cols-1">
       {worksArray.map((item, index) => (
         <div key={index}>
           <div className="bg-[url(/images/home/abstract-background.png)] bg-no-repeat bg-cover py-20">
